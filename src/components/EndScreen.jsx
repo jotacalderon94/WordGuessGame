@@ -1,15 +1,15 @@
 import React from "react";
 import styles from "./Styles/EndScreen.module.css";
 
-const EndScreen = ({ result, word, score, bestScore, onReplay, onMainMenu }) => {
+const EndScreen = ({ result, word, score, bestScore, username, onReplay, onMainMenu }) => {
   return (
     <div className={styles.end}>
-      <h1>{result === "win" ? "🎉 You Won!" : "💀 You Lost!"}</h1>
-       <br />
+      <h1>{result === "win" ? `Congratulations ${username}, You Won!` : `Sorry ${username}, You Lost!`}</h1>
+      <br />
       <p>The word was: <strong>{word}</strong></p>
       <br />
       <p>Your Score: <strong>{score}</strong></p>
-       <br />
+      <br />
       <p>🏆 Best Score: <strong>{bestScore}</strong></p>
 
       <div>

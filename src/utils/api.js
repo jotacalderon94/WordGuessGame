@@ -14,21 +14,21 @@ export const hardcodedWords = {
     { word: "mountain", hint: "I am tall and hard to climb" },
     { word: "airplane", hint: "I fly through the sky carrying people" }
   ]
-};
+}; // we can add more words later
 
-// ✅ Returns a random word from hardcoded list
+// Returns a random word from hardcoded list
 export function getRandomHardcodedWord(difficulty) {
   const words = hardcodedWords[difficulty];
-  return words[Math.floor(Math.random() * words.length)];
+  return words[Math.floor(Math.random() * words.length)]; 
 }
 
-// ✅ Fetches a random word from Random Word API (no difficulty)
+// Fetches a random word from Random Word API (no difficulty)
 export async function fetchWordFromAPI() {
   try {
     const response = await fetch("https://api.datamuse.com/words?sp=*&max=500");
     const data = await response.json();
 
-    // Filter to remove weird/complex terms
+    // Filter to remove weird/complex terms since I couldnt find a way to filter by length to separate easy/medium/hard maybe add a length param later
     const filtered = data
       .map(d => d.word.toLowerCase())
       .filter(w =>
@@ -46,11 +46,13 @@ export async function fetchWordFromAPI() {
     }
 
     const word = filtered[Math.floor(Math.random() * filtered.length)];
-    console.log(`✅ Selected API Random Word: ${word}`);
+    console.log(`✅ Selected API Random Word: ${word}`); // useful for debugging and testing the word
     return { word, hint: "No hint available" };
 
   } catch (err) {
     console.warn("❌ API failed, fallback to hardcoded HARD:", err);
     return getRandomHardcodedWord("hard");
   }
+
+  // we can add another dictionary API that way you can understand the meaning of the word and not just guess the word. 
 }

@@ -33,7 +33,7 @@ function App() {
 
   const handleMainMenu = () => {
   setGameResult(null);
-  setGameConfig(null); // Allows to go back to difficulty selection, other way I'll get stuck
+  setGameConfig(null); // Allows to go back to difficulty selection, other way I'll get stuck on the same level
   setUsername(null); // Reset username to go back to welcome screen
   localStorage.removeItem("username"); // Clear username from local storage but the best score will stay there, *** check if I want it***
 };
@@ -52,6 +52,7 @@ function App() {
           word={gameResult.word}
           score={gameResult.score}
           bestScore={bestScore}
+          username={username}   
           onReplay={handleReplay}
           onMainMenu={handleMainMenu}
         />
