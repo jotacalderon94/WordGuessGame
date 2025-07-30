@@ -9,7 +9,7 @@ The game includes **two modes**:
 
 ## 🌐 Live Demo  
 
-[🎮 Play the Word Guessing Game](https://wordguessgame.vercel.app)
+[🎮 Play the Word Guessing Game](https://word-guess-game-azure-pi.vercel.app/)
 
 ---
 
