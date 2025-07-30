@@ -80,6 +80,7 @@ const GameBoard = ({ username, config, onGameEnd }) => {
         value={guess}
         onChange={(e) => setGuess(e.target.value)}
         placeholder="Enter a letter"
+        onKeyDown={(e) => e.key === "Enter" && handleGuess()}
       />
       <button onClick={handleGuess}>Guess</button>
 

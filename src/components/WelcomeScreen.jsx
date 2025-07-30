@@ -21,6 +21,7 @@ const WelcomeScreen = ({ onStart }) => {
         className={styles.input}
         value={name}
         onChange={(e) => setName(e.target.value)}
+        onKeyDown={(e) => e.key === "Enter" && handleStart()}
       />
       <button className={styles.button} onClick={handleStart}>
         Start Game
