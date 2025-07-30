@@ -57,7 +57,7 @@ src/
 5. Open your browser at http://localhost:5173
 ---
 
-🔒 API Usage & Security
+## 🔒 API Usage & Security
 ---
 
 The Datamuse API is public and doesn’t require authentication.
@@ -65,9 +65,11 @@ The Datamuse API is public and doesn’t require authentication.
 No secret keys are used in this project.
 
 AWS RDS or other backend integrations can be added as an optional enhancement.
+
 ---
-🎯 Optional Future Enhancements
+## 🎯 Optional Future Enhancements
 ---
+
 ✅ AWS RDS Integration (store user data in a database)
 
 ✅ Backend API (Node/FastAPI) for secure word fetching and score storage
@@ -75,8 +77,9 @@ AWS RDS or other backend integrations can be added as an optional enhancement.
 ✅ Custom Dictionary API for better random word control
 
 ✅ Multiplayer Mode
+
 ---
-📌 Notes
+## 📌 Notes
 ---
 Random Word Mode: The API returns words of varying difficulty (filtered but not perfect).
 
@@ -84,7 +87,7 @@ Hint Mode: Difficulty selection works only for the hardcoded word list, since I 
 
 Offline Fallback: If the API fails, the game uses hardcoded words.
 ---
-👤 Author
+## 👤 Author
 ---
 Jose Calderon
 Student Developer
