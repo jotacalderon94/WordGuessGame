@@ -1,0 +1,23 @@
+.board {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.word {
+    font-size: 24px;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+
+.board input {
+    width: 100px;
+    margin: 10px;
+    padding: 8px;
+}
+
+.board button {
+    margin: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
