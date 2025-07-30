@@ -47,17 +47,19 @@ src/
 
 1. Clone the repository
    
-   git clone <https://github.com/jotacalderon94/WordGuessGame.git>
-   
+ ```
+   git clone https://github.com/jotacalderon94/WordGuessGame.git
+
    cd WordGuessGame
-
+ ```
 2. Open a terminal in the project folder and Install dependencies:
-    
-    npm install
-
+```
+   npm install
+```
 3. Start development server:
-    npm run dev
-
+```
+   npm run dev
+```
 4. Open your browser at http://localhost:5173
 
 ---
