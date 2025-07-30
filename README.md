@@ -7,6 +7,12 @@ The game includes **two modes**:
 
 ---
 
+## 🌐 Live Demo  
+
+[🎮 Play the Word Guessing Game](https://wordguessgame.vercel.app)
+
+---
+
 ## 🚀 Features
 - ✅ Fetches random words dynamically (API mode)
 - ✅ Play with hints (Easy, Medium, Hard)
