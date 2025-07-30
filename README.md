@@ -44,18 +44,21 @@ src/
 ---
 
 ## ⚙️ Installation & Running Locally
-1. **Download the ZIP file** and extract it to your preferred location.
 
-2. Open a terminal in the project folder:
-   cd word-guessing-game
+1. Clone the repository
+   
+   git clone <https://github.com/jotacalderon94/WordGuessGame.git>
+   
+   cd WordGuessGame
 
-3. Install dependencies:
+2. Open a terminal in the project folder and Install dependencies:
+    
     npm install
 
-4. Start development server:
+3. Start development server:
     npm run dev
 
-5. Open your browser at http://localhost:5173
+4. Open your browser at http://localhost:5173
 
 ---
 

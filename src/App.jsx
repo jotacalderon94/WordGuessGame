@@ -5,7 +5,8 @@ import GameBoard from "./components/GameBoard";
 import EndScreen from "./components/EndScreen";
 
 function App() {
-  const [username, setUsername] = useState(() => localStorage.getItem("username") || null);
+  //const [username, setUsername] = useState(() => localStorage.getItem("username") || null);
+  const [username, setUsername] = useState(null); // Initialize username as null, will be set when user starts the game and a new repo. so user doesnt have to clear local storage
   const [gameConfig, setGameConfig] = useState(null);
   const [gameResult, setGameResult] = useState(null);
   const [bestScore, setBestScore] = useState(() => parseInt(localStorage.getItem("bestScore")) || 0);
